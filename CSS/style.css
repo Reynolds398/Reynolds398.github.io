@@ -1,20 +1,25 @@
 @font-face {
-	font-family: 'Ruluko-Regular';
-	src: url('../Fonts/Ruluko/Ruluko-Regular.ttf') format('truetype');
+	font-family: "Cohaerentia-Italic";
+	src: url('../Fonts/cohaerentia/Cohaerentia-Italic') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: "Dosis-Regular";
-	src: url('../Fonts/Dosis/Dosis-Regular.ttf') format('truetype');
+	font-family: "Cohaerentia-Regular";
+	src: url('../Fonts/cohaerentia/Cohaerentia-Regular') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: "Dosis-Light";
-	src: url('../Fonts/Dosis/Dosis-Light.ttf') format('truetype');
+	font-family: "Cohaerentia-SmallCaps-regular";
+	src: url('../Fonts/cohaerentia/Cohaerentia-SmallCaps-regular') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+}
+body {
+	background: #fff2cc;
+	font-family: "Cohaerentia-Regular";
+	margin: 0;
 }
 
 /*------------------------------ Header ------------------------------*/
