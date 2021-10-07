@@ -1,3 +1,7 @@
 #header {
-	
+	background-color: #e06666;
+	height: 80px;
+	border-bottom: 1px solid #fff;
+	padding: 5px 20px 10px; /* Format: Top padding, Left Padding, Bottom Padding*/
+
 }
