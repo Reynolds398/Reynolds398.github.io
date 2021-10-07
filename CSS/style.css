@@ -1,3 +1,24 @@
+@font-face {
+	font-family: 'Ruluko-Regular';
+	src: url('../Fonts/Ruluko/Ruluko-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Dosis-Regular";
+	src: url('../Fonts/Dosis/Dosis-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Dosis-Light";
+	src: url('../Fonts/Dosis/Dosis-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*------------------------------ Header ------------------------------*/
+
 #header {
 	background-color: #e06666;
 	height: 80px;
