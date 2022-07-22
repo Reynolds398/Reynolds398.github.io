@@ -76,3 +76,24 @@ body {
 #navigation li:first-child {
 	margin-left: 0;
 }
+
+/*------------------------------ Contents ------------------------------*/
+
+div {
+	border: 2px solid blue;
+}
+
+/** Social Media Logo **/
+#social img {
+	height:  60px;
+}
+
+/** Next Paragraph Indent **/
+p + p {
+	text-indent: 2em;
+}
+
+/** List Description **/
+li + a + a {
+	text-indent: 2em;
+}
