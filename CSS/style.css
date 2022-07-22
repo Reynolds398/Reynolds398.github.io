@@ -79,13 +79,14 @@ body {
 
 /*------------------------------ Contents ------------------------------*/
 
-div {
+/*div {
 	border: 2px solid blue;
-}
+}*/
 
 /** Social Media Logo **/
 #social img {
 	height:  60px;
+	margin-right: 15px;
 }
 
 /** Next Paragraph Indent **/
@@ -93,7 +94,32 @@ p + p {
 	text-indent: 2em;
 }
 
-/** List Description **/
-li + a + a {
-	text-indent: 2em;
+/** Website Description **/
+#description {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/** Featured Project **/
+#showcase {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/** Problems Description **/
+#problems {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/** Future Plans **/
+#future {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/*------------------------------ Footer ------------------------------*/
+#footer {
+	margin-left: 15px;
+	margin-right: 15px;
 }
