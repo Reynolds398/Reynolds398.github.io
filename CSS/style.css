@@ -31,11 +31,10 @@ body {
 #header {
 	background-color: #e06666;
 	height: 80px;
-	border-bottom: 1px solid #fff;
+	border-bottom: 5px solid #bd5555;
 	padding: 5px 20px 10px; /* Format: Top padding, Left Padding, Bottom Padding*/
 	overflow: hidden;
 }
-
 
 /** Logo **/
 #logo {
@@ -85,7 +84,8 @@ body {
 
 /** Social Media Logo **/
 #social img {
-	height:  60px;
+	padding-top: 20px;
+	height:  40px;
 	margin-right: 15px;
 }
 
@@ -120,6 +120,27 @@ p + p {
 
 /*------------------------------ Footer ------------------------------*/
 #footer {
+	background-color: #45818e;
+	height: 80px;
+	overflow: hidden;
+	border-top: 5px solid #35636e;
+}
+
+#contact {
+	margin-top: 15px;
+	margin-right: 20px;
 	margin-left: 15px;
+	float: left;
+}
+
+#footer #social {
+	height: 10px;
+}
+
+#footer #navigation {
+	display: inline-block;
+	line-height: 30px;
+	text-decoration: none;
+	float: right;
 	margin-right: 15px;
 }
