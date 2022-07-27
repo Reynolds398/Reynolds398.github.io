@@ -78,10 +78,6 @@ body {
 
 /*------------------------------ Contents ------------------------------*/
 
-/*div {
-	border: 2px solid blue;
-}*/
-
 /** Social Media Logo **/
 #social img {
 	padding-top: 20px;
@@ -98,6 +94,7 @@ p + p {
 #description {
 	margin-left: 15px;
 	margin-right: 15px;
+	border-bottom: 5px solid #cfc5a7;
 }
 
 /** Featured Project **/
@@ -110,6 +107,7 @@ p + p {
 #problems {
 	margin-left: 15px;
 	margin-right: 15px;
+	border-bottom: 5px solid #cfc5a7;
 }
 
 /** Future Plans **/
