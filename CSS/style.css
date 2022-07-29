@@ -71,10 +71,23 @@ figcaption {
 	float: right;
 }
 
+#navigation #selected {
+	font-weight: bold;
+}
+
 #navigation li {
 	list-style: none;
 	float: left;
 	margin: 0 15px;
+}
+
+#navigation a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#navigation a:hover {
+	text-decoration: underline;
 }
 
 #navigation li:first-child {
