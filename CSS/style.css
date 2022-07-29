@@ -2,19 +2,19 @@
 /* Adding Fonts */
 @font-face {
 	font-family: "Cohaerentia-Italic";
-	src: url('../Fonts/cohaerentia/Cohaerentia-Italic') format('truetype');
+	src: url('../Fonts/cohaerentia/Cohaerentia-Italic.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Cohaerentia-Regular";
-	src: url('../Fonts/cohaerentia/Cohaerentia-Regular') format('truetype');
+	src: url('../Fonts/cohaerentia/Cohaerentia-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Cohaerentia-SmallCaps-regular";
-	src: url('../Fonts/cohaerentia/Cohaerentia-SmallCaps-regular') format('truetype');
+	src: url('../Fonts/cohaerentia/Cohaerentia-SmallCaps-regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -22,7 +22,7 @@
 /*------------------------------ Body ------------------------------*/
 body {
 	background: #fff2cc;
-	font-family: "Cohaerentia-Regular";
+	font-family: "Times New Roman";
 	margin: 0;
 }
 
@@ -59,7 +59,7 @@ figcaption {
 
 /** Header Text **/
 #header #text {
-	width: 500px;
+	width: 600px;
 	float: left;
 }
 
