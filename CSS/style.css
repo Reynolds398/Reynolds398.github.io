@@ -26,6 +26,11 @@ body {
 	margin: 0;
 }
 
+/** Image Caption **/
+figcaption {
+	text-align: center;
+}
+
 /*------------------------------ Header ------------------------------*/
 
 #header {
@@ -104,11 +109,49 @@ p + p {
 	word-wrap: normal;
 }
 
-#showcase img {
+/** First Image **/
+#showcase #preview {
 	float: left;
+	margin-right: 10px;
+}
+
+#showcase #preview img {
 	width: 480px;
 	height: auto;
-	margin-right: 10px;
+}
+
+#showcase #firstp {
+	padding-top: 30px;
+}
+
+/** Second Image **/
+#showcase #customization {
+	float: right;
+}
+
+#customization img {
+	height: 270px;
+	width: auto;
+}
+
+/** Third and Fourth Image **/
+#buttonExample {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#buttonExample #one {
+	padding-left: 400px;
+	float: left;
+}
+
+#buttonExample #two {
+	float: right;
+}
+
+#buttonExample img {
+	width: 200px;
+	height: auto;
 }
 
 /** Problems Description **/
