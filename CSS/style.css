@@ -94,6 +94,11 @@ figcaption {
 	margin-left: 0;
 }
 
+#navigation #incomplete {
+	text-decoration: line-through;
+	color: #4f4e4e;
+}
+
 /*------------------------------ Contents ------------------------------*/
 
 /** Social Media Logo **/
@@ -271,8 +276,6 @@ p + p {
 	margin-left: 15px;
 	margin-top: 15px
 }
-
-/** Dice Maker **/
 
 /*------------------------------ Footer ------------------------------*/
 #footer {
