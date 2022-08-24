@@ -24,6 +24,15 @@ body {
 	background: #fff2cc;
 	font-family: "Times New Roman";
 	margin: 0;
+	/* This is to make sure that footer always stay at the bottom even if there is not enough content*/
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* This is to make sure that footer always stay at the bottom even if there is not enough content*/
+.wrapper { 
+	flex: 1;
 }
 
 /** Image Caption **/
@@ -235,7 +244,6 @@ p + p {
 /** Button **/
 .button {
 	padding-left: 15px;
-	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 18px;
@@ -278,11 +286,12 @@ p + p {
 }
 
 /*------------------------------ Footer ------------------------------*/
-#footer {
+footer {
 	background-color: #45818e;
 	height: 80px;
 	overflow: hidden;
 	border-top: 5px solid #35636e;
+	float: bottom;
 }
 
 #contact {
@@ -292,11 +301,11 @@ p + p {
 	float: left;
 }
 
-#footer #social {
+footer #social {
 	height: 10px;
 }
 
-#footer #navigation {
+footer #navigation {
 	display: inline-block;
 	line-height: 30px;
 	text-decoration: none;
