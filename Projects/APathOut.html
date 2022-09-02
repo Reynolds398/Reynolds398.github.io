@@ -22,7 +22,7 @@
 					<a id="selected" href="../projects.html"> Projects </a>
 				</li>
 				<li>
-					<a id="incomplete"> Video </a>
+					<a href="../videos.html"> Video </a>
 				</li>
 				<li>
 					<a id="incomplete"> Art </a>
@@ -44,44 +44,45 @@
 					<img src="Assets/APathOut.png" alt="APathOut">
 					<figcaption>Figure 1: A Path Out</figcaption>
 				</figure>
-				<p id="firstp">Dice Maker is my most latest project that I worked on. This is a personal project that I did for the GMTK Game Jam 2022. Here is some description of the game idea. You take the role as a Dice Maker where your job is to create dice requested by the customers. However, if you so choose, you can rig the dice so that it is more likely to land on 6. The game is suppose to have different kinds of small endings based on what dice the player made but we ran out of time so we could only complete the first day. This is the best prototype I have ever made (probably because the other prototype I made for the GMTK Game Jam 2021 was incomplete). This project is very interesting to say the least. I have never made this genre of game before. I am more comfortable with making 2D platformer so it was an eye opening experience to see the amount of effort required to create a game in this genre.</p>
-				<p>Since I was the director for this game, I had to distribute the work properly as well as setting up ways to make sure everyone's work is inside the final game. For this project, I used GitHub to make it easier to merge the Unity project throughout the two days time limit. Unfortunately, my friend who helped me with coding the project is not that experienced with Unity so I had to code almost all of the game's mechanics. Here's the list of mechanics that I implemented in the game:</p> <br><br><br>
+				<p id="firstp">A Path Out was the very first game that I ever worked on. The game idea was that the player will take control of a conjoined twin that has the ability to separate and connect back together. It was suppose to be some sort of platformer game with some elements of puzzle to keep it interesting. The unique aspect of this game was the fact that to control the character, the player would have to use the "A" key to move left and right arrow key to move right. This is to emphasize that they are different characters and not just one character. The goal for this prototype was to create at least 3 small levels. Unfortunately, we failed to reach this goal due to a lot of unforseen problems.</p>
+				<p>I was the director for this project. However, this was my first time doing something like this. This resulted in a lot of issues in the workflow of the game. Not only that, this was also the first time I made a game so I had to figure out a lot of things while working on this game. Unfortunately, both me and my friend who helped me with coding the project is not that experienced with Unity so we had to spend a lot of time just watching tutorials. In the end, we only managed to implement very few things and no gameplay element whatsoever. Even with my lack of experience and very short time limit, I still managed to accomplish something. The result was not what I expected but I'm pretty proud of what I managed to accomplish for our very first game. Here's the list of mechanics that I implemented in the game:</p> <br><br><br>
 			<dl>
-				<figure id="customization">
-					<img src="Assets/Customization.png" alt="Customization Layout">
-					<figcaption>Figure 2: Customization Layout</figcaption>
-				</figure>
-				<dt> <strong>Customization</strong> </dt>
-				<dd> Inside the game, we wanted the player to be able to create customizable dice. Not only that, we wanted the dice that the player made to show up so that the player know what kind of dice they made. I figured out a system that allows the game to uniquely identify which dice in particular that the player made based on their selection. To give an example, our game allows the player to choose the material and colour of the dice. If the player chose the colour "yellow" and the material "metal", the game would display a yellow metal dice. I did this by sorting the array of dice objects in a way that I can simply add integers based on the colour and material the player chose to uniquely identify which dice in the array the player made. For example, for a "yellow metal" dice I simply add 3 for "yellow" and 4 for "metal" to get the "yellow metal" dice which can be accessed with dice[7] (the array that hold all dice objects).</dd><br>
-
-				<dt> <strong>Dialogue Manager</strong> </dt>
-				<dd> Dice Maker is a very dialogue heavy game. Without the dialogue, the game would feel very empty and pointless. To deal with all the different kinds of dialogues each customers will have, I created a Dialogue Manager to oversee what dialogue should be said depending on what the player did. This is slightly more difficult than I imagined at first since the scene state keeps getting resetted when you go back and forth from making the dice and dealing with the customer. I had this issue where after the player made the dice, the customers just keep saying their default dialogue which made the game stuck. Thankfully after quite a bit of research, I managed to keep track of the progress of the game by putting up boolean flags that allows the game to know which customer we're dealing with and if the player has made a dice for that customer or not. This works even if the scene was resetted as it just basically fast forward the progress to where the player is currently at.</dd><br>
-
-				<dt> <strong>Interactive Buttons</strong> </dt>
-				<dd> Most game will eventually include buttons that does something in the game and this game is no exception. This is probably the most important and the most simplest thing to add in a game. However, this is the first time I actually implemented interactive buttons inside a game. I made a button that move the characters to different part of the game, a button to roll a dice, a button for customization and so on. It's definitely tough to make these buttons as each of them does different things and some buttons have some mechanics that I never implemented before so it took some time to figure out how to make it work. One example is the "Material" button where only one of the button can be selected at a time so I had to figure out how to "pop out" the selected button when a different button is selected. Fortunately it all worked out fine.</dd><br>
-
-				<div id="buttonExample">
-					<figure id="one">
-						<img src="Assets/Default.png" alt="Default Button">
-						<figcaption>Figure 3: Classic Button Selected</figcaption>
+				<div id="animation">
+					<figure id="animation1">
+						<img src="Assets/StandingJump.gif" alt="Standing Jump">
+						<figcaption>Figure 2: Weird Jump Animation</figcaption>
 					</figure>
-					<figure id="two">
-						<img src="Assets/Metal.png" alt="Default Button">
-						<figcaption>Figure 4: Metal Button Selected</figcaption>
+					<figure id="animation2">
+						<img src="Assets/JumpBackAndForth.gif" alt="Jumping">
+						<figcaption>Figure 3: Jumping Back And Forth Animation</figcaption>
 					</figure>
 				</div>
+				<dt> <strong>Animation</strong> </dt>
+				<dd> Animation is a very important aspect in any game. However, I never realized how complicated it could be. I thought simply adding the correct sprite would make everything work properly but I was clearly wrong. After watching some tutorials, I sort of figured out how it works. I managed to make the character to switch between different animations correctly. I created some booleans to figure out the state of the player at all times and to play the corresponding animation based on that state. Although, there are some issues with the jump animation as can be seen in Figure 2. Other than that, it looks pretty good. There are a couple animation issues due to extreme cases (one such case is jumping first before moving) but I decided to leave it be since I still have to work on the mechanics of the game.</dd><br>
 
-				<dt> <strong>Scene Transitions</strong> </dt>
-				<dd> If you took a look at my very first prototype, you would see that there is barely any gameplay elements in it besides walking and jumping. Which is why for the very first time, I had to deal with switching scenes. The switching aspect was surprisingly easy. Just add a single line of code and it will transport the player to that scene. However, when you want to go back and forth between scenes, you will eventually realize that the scene state is resetted to its default state. This is not what I want for this game so I had to figure out how to make the game "remember" which state it was on before switching scenes. Thankfully I managed to figure it out. This is also the reason why my Dialogue Manager worked out fine.</dd><br>
+				<dt> <strong>Enemy AI</strong> </dt>
+				<dd> The initial plan was to introduce a couple of enemies to provide some sort of challenge for the player. However, we couldn't really implement anything else besides the enemy pathing. I came up with this pathing myself and it is very simple too. To put it simply, I made it so that the code will figure out where the enemy is located in the world and make it move left and right. I essentially make the enemy always move to the right using this line of code "transform.Translate(Vector2.left * speed * Time.deltaTime * phaseDirection)". This code essentially means "move left" * phaseDirection. After reaching a certain distance, it will flip the enemy sprite and make phaseDirection to be negative. This essentially made the code from before become "move right". This resulted in the enemy to behave like in Figure 4.</dd><br>
 
-				<dt> <strong>Requirement Check</strong> </dt>
-				<dd> This is the first time I also had to check whether the player did the task assigned to them or not. This is probably the easiest one to do since I essentially just need to check whether the dice id that the customer requested is the same as the one that player made. Most of the hard part was taken care of when I figured out the Customization part of this game.</dd>
+				<div id="enemy">
+					<figure>
+						<img src="Assets/Enemy.gif" alt="Enemy">
+						<figcaption>Figure 4: Enemy Pathing</figcaption>
+					</figure>
+				</div>
 			</dl>
 		</div>
 		<div id="problems">
 			<h2>Problems I faced during the project</h2>
-			<p> Since this is the second time I made a game with a team of artists and programmer, I thought I could finally make a prototype of a game that I will be very proud of. Turns out I was very wrong. What I noticed in the second day working on this project is that I spent around 50% of my time in Unity just placing and adjusting the assets inside the game instead of just coding the mechanics. This in turn made me unable to spend more time on the mechanics, which in turn make the game shorter than I intended it to be. This wouldn't be too bad if I had someone to work on the mechanics of the game. However, my programmer friend is not that experienced with Unity so it made the progress of the game slower than intended.</p>
-			<p>Not only that, the game contains a lot of mechanics that I had to implement for the first time so I had to spend a lot of time researching when my implementation doesn't work. This in turn resulted in me spending almost 12+ hours just trying to figure something out or placing the objects in the right place in Unity. Definitely not a good use of the time especially when only 48 hours is given to do the project. As I keep learning more by doing more projects like these, I hope that I would eventually know how to deal with these problems so that for the next GMTK Game Jam I would finally make something I'm proud to share with other people.</p>
+			<p> It can't be said enough that this whole project is full of problems. To give some context, I had only learned Unity for around 2 months before joining this Game Jam. I have never attempted to make any original game before. Even though I was clearly lacking in experience, I thought that I should probably participate anyway in order to gain more experience. Immediately after starting the project, I realized that just figuring out how to make the player jump is not as simple as I thought. I had to watch some tutorials to get the right feeling for the jump. Thankfully, I managed to get the jump to work but I spend way more time on it than I should have.</p>
+			<p> Once that was done, I was immediately greeted with another problem. I didn't know what to do afterwards since the art assets was not done yet so I couldn't create the level. I ended up simply waiting for the asset to be completed so I could start creating the level. After a few hours, I realized my mistake. I should've just use some primitive objects to act as a stand-in for the assets so I could actually continue working on the mechanics of the game. So I started to search for tutorials regarding how to set up sound effects, creating buttons, and try to figure out how to separate the characters and combine them again. I managed to get the sound effects to work but it was way too loud. Not only that, the sound effect volume was constant regardless of whether you are close to the source or not. I didn't end up fixing this problem. I tried to create some doors that require the player to interact with a button to open but I couldn't get it to work. This is because I was still confused regarding how collision interaction work in Unity and unfortunately I couldn't understand it before the submission deadline.</p>
+			<p> Afterwards, the art team had finally managed to complete the assets. I immediately noticed a problem with it since the background assets have the objects assets merged with it. What this means is that I couldn't move around the objects to create different levels with the same assets. This is why I ended up making just one level. Not only that, the sprite sheet that was made for the main character was not centered so I had to make the art team modify it until they got it right. This happened because my whole team are completely new when it comes to making games. Once the art team got it right, I went on and try to make the animation transitions work. I had to watch countless tutorials and spent way too many hours just trying to make it work. Implementing the animation is as complicated as how it looks in Figure 5. This is why there is barely any gameplay element in our game.</p>
+
+			<figure id="animationChart">
+				<img src="Assets/Animation.png" alt="Animation Chart">
+				<figcaption>Figure 5: Animation in Unity</figcaption>
+			</figure>
+
+			<p> This project was a complete failure in terms of delivering an MVP (Minimum Viable Product). However, I managed to learn a lot from this experience regarding creating a game. From the time I'm writing this, I have spent a lot more time learning more about Unity to the point where I can say that I can implement anything as long as I am given sufficient amount of time. I also made sure to not repeat the same mistake regarding the art assets for our next GMTK Game Jam. Even though it was a complete failure, I am glad that I participated in this Game Jam. I also want to thank my friends for helping out on this project.</p>
 		</div>
 	</div>
 	<footer>
@@ -103,7 +104,7 @@
 					<a id="selected" href="../projects.html"> Projects </a>
 				</li>
 				<li>
-					<a id="incomplete"> Video </a>
+					<a href="../videos.html"> Video </a>
 				</li>
 				<li>
 					<a id="incomplete"> Art </a>

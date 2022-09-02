@@ -136,67 +136,14 @@ p + p {
 	word-wrap: normal;
 }
 
-/** First Image **/
-#showcase #preview {
-	float: left;
-	margin-right: 10px;
-}
-
-#showcase #preview img {
-	width: 480px;
-	height: auto;
-}
-
-#showcase #firstp {
-	padding-top: 30px;
-}
-
-/** Second Image **/
-#showcase #customization {
-	float: right;
-}
-
-#customization img {
-	height: 270px;
-	width: auto;
-}
-
-/** Third and Fourth Image **/
-#buttonExample {
-	display: inline-block;
-	vertical-align: top;
-}
-
-#buttonExample #one {
-	padding-left: 400px;
-	float: left;
-}
-
-#buttonExample #two {
-	float: right;
-}
-
-#buttonExample img {
-	width: 200px;
-	height: auto;
-}
-
-/** Problems Description **/
-#problems {
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
-/** Future Plans **/
-#future {
-	border-top: 5px solid #cfc5a7;
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
 /** Project Page **/
-
 #project {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/** Video Page **/
+#video {
 	margin-left: 15px;
 	margin-right: 15px;
 }
@@ -283,6 +230,95 @@ p + p {
 #back {
 	margin-left: 15px;
 	margin-top: 15px
+}
+
+/*------------------------------ Dice Maker ------------------------------*/
+/** Showcase (currently for Dice Maker) **/
+/** First Image **/
+#showcase #preview {
+	float: left;
+	margin-right: 10px;
+}
+
+#showcase #preview img {
+	width: 480px;
+	height: auto;
+}
+
+#showcase #firstp {
+	padding-top: 30px;
+}
+
+/** Second Image **/
+#showcase #customization {
+	float: right;
+}
+
+#customization img {
+	height: 270px;
+	width: auto;
+}
+
+/** Third and Fourth Image **/
+#buttonExample {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#buttonExample #one {
+	padding-left: 400px;
+	float: left;
+}
+
+#buttonExample #two {
+	float: right;
+}
+
+#buttonExample img {
+	width: 200px;
+	height: auto;
+}
+
+/** Problems Description **/
+#problems {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/** Future Plans **/
+#future {
+	border-top: 5px solid #cfc5a7;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+
+/*------------------------------ A Path Out ------------------------------*/
+#animation {
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	width: 550px;
+}
+
+#animation img {
+	height: 300px;
+	margin-left: 17px;
+}
+
+#animation1 {
+	float: left;
+}
+
+#enemy img {
+	width: 800px;
+	height: 200px;
+	margin-left: 270px;
+}
+
+#animationChart img {
+	height: 450px;
+	margin-left: 260px;
 }
 
 /*------------------------------ Footer ------------------------------*/
