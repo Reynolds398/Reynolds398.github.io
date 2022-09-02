@@ -148,6 +148,12 @@ p + p {
 	margin-right: 15px;
 }
 
+#youtube {
+	padding-top: 15px;
+	padding-left: 400px;
+	padding-bottom: 15px;
+}
+
 /** Entries **/
 .entries {
 	text-decoration: none;
@@ -320,6 +326,9 @@ p + p {
 	height: 450px;
 	margin-left: 260px;
 }
+
+/*------------------------------ Inpainting ------------------------------*/
+
 
 /*------------------------------ Footer ------------------------------*/
 footer {
